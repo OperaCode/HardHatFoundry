@@ -1,5 +1,5 @@
 # Multi-Framework Smart Contract Deployment  
-### Hardhat + Foundry → Sepolia & Arc Testnet
+### Hardhat + Foundry → Lisk Sepolia & Arc Testnet
 
 This repository demonstrates deploying the same smart contract using **two Ethereum development frameworks**:
 
@@ -8,7 +8,7 @@ This repository demonstrates deploying the same smart contract using **two Ether
 
 Both frameworks deploy to:
 
-- **Ethereum Sepolia Testnet** (ETH gas)
+- **Lisk Sepolia Testnet** (ETH gas)
 - **Arc Testnet** (USDC gas)
 
 ---

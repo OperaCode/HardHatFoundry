@@ -4,7 +4,7 @@ import "@nomicfoundation/hardhat-toolbox";
 require("dotenv").config({ path: "../.env" });
 
 
-const { SEPOLIA_URL, PRIVATE_KEY, ETHERSCAN_API_KEY, ARC_RPC_URL , LISK_SEPOLIA_URL} = process.env;
+const { SEPOLIA_URL, PRIVATE_KEY, ETHERSCAN_API_KEY, ARC_RPC_URL, LISK_SEPOLIA_URL} = process.env;
 
 const config: HardhatUserConfig = {
   solidity: "0.8.28",
@@ -16,11 +16,11 @@ const config: HardhatUserConfig = {
       accounts: [`0x${PRIVATE_KEY}`],
       // chainId: <LISK_SEPOLIA_CHAIN_ID>,
     },
-    sepolia: {
-      url: SEPOLIA_URL,
-      accounts: [`0x${PRIVATE_KEY}`],
-      // chainId: 11155111,
-    },
+    // sepolia: {
+    //   url: SEPOLIA_URL,
+    //   accounts: [`0x${PRIVATE_KEY}`],
+    //   // chainId: 11155111,
+    // },
     arcTestnet: {
       url: ARC_RPC_URL,          // https://rpc.testnet.arc.network
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
